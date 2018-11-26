@@ -1,5 +1,40 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+### Eclipse ###
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+
+### Eclipse Patch ###
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+
+# External tool builders
+.externalToolBuilders/
+
+# sbteclipse plugin
+.target
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
 ### Gradle ###
 .gradle
 /build/
