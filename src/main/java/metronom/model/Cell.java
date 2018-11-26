@@ -40,7 +40,7 @@ public class Cell {
 
 	@Override
 	public String toString() {
-		return (row+1)+","+(column+1);
+		return new String((row+1)+","+(column+1));
 	}
 
 }
