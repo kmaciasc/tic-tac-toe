@@ -32,12 +32,13 @@ game.player.computer=C
 ```
 
 ### Design solution
-##Main instance
+
+## Main instance
 _TicTacToeGame_ is the main entrance of the application and who starts it.
-##Controller
+## Controller
 Have functionalities non-related to the object itself acting as mediators.
-##View
+## View
 There´s only one class which displays the current board or an specific message. 
 It also receives information, but it doesn't process data, it just print information to the user
-##Model
+## Model
 All classes represent the needed objects to run the game holding the needed data. Each class has its own responsibility
