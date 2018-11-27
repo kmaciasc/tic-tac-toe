@@ -12,6 +12,11 @@ gradle build
 ### Ready to play?
 Run in your command prompt:
 ```
+gradle build
+```
+
+And then
+```
 gradle run
 ```
 
@@ -38,7 +43,7 @@ _TicTacToeGame_ is the main entrance of the application and who starts it.
 ## Controller
 Have functionalities non-related to the object itself acting as mediators.
 ## View
-There´s only one class which displays the current board or an specific message. 
+There´s only one class which displays the current board or an specific message.
 It also receives information, but it doesn't process data, it just print information to the user
 ## Model
 All classes represent the needed objects to run the game holding the needed data. Each class has its own responsibility

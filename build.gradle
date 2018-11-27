@@ -11,7 +11,7 @@ dependencies {
 }
 
 
-mainClassName = "metronom.controller.TicTacToeGame"
+mainClassName = "metronom.TicTacToeGame"
 
 run {
 	standardInput = System.in
