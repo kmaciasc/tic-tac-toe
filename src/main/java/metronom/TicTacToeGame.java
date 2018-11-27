@@ -1,9 +1,11 @@
-package metronom.controller;
+package metronom;
 
 
 import java.util.Collections;
 import java.util.List;
 
+import metronom.controller.BoardController;
+import metronom.controller.SetupController;
 import metronom.model.Board;
 import metronom.model.Cell;
 import metronom.model.Player;
@@ -14,14 +16,14 @@ public class TicTacToeGame {
 
 	private TicTacToeView view;
 	private SetupController setUpController;
-	private PlayerController playerController;
+	private BoardController playerController;
 	private Board board;
 	private List<Player> players;
 
 	public TicTacToeGame() {
 		view = new TicTacToeView();
 		setUpController = new SetupController();
-		playerController = new PlayerController();
+		playerController = new BoardController();
 
 	}
 
@@ -41,6 +43,7 @@ public class TicTacToeGame {
 			Cell randomCell;
 			String playerInput;
 			for (Player player : players) {
+				
 				if (player.isHuman()) {
 					boolean isValidInput = false;
 					playerInput = null;
@@ -54,7 +57,7 @@ public class TicTacToeGame {
 							view.displayMessage("Invalid input. Try again... (e.g. 3,1)");
 							continue;
 						}
-						if(!Util.isMovementInRange(playerInput, board.getRows(), board.getCols())) {
+						if(!board.isMovementInRange(Util.getRowValue(playerInput), Util.getColumnValue(playerInput))) {
 							isValidInput = false;
 							view.displayMessage("The input is out of the board. Try again...");
 							continue;

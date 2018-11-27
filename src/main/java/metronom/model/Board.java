@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Board {
 
-	public int rows;
-	public int cols;
-	public Cell [][] gameBoard;
+	private int rows;
+	private int cols;
+	private Cell [][] gameBoard;
 
 	public Board(int rows, int cols) {
 		this.rows = rows;
@@ -38,6 +38,10 @@ public class Board {
 		return !currentPosition.isPlayerAssigned();
 	}
 
+	public boolean isMovementInRange (int selectedRow, int selectedColumn) {
+		return (selectedRow > 0 && selectedRow <= getRows()) && 
+				(selectedColumn > 0 && selectedColumn <= getCols());
+	}
 
 	public void submitMove(int row, int column, Player player) {
 		if (isCellAvailable(row, column)) {

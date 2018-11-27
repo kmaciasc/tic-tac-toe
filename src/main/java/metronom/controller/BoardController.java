@@ -7,9 +7,9 @@ import java.util.List;
 import metronom.model.Board;
 import metronom.model.Cell;
 
-public class PlayerController {
+public class BoardController {
 
-	public PlayerController() {
+	public BoardController() {
 
 	}
 

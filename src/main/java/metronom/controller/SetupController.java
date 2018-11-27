@@ -122,4 +122,10 @@ public class SetupController {
         return value.charAt(0);
 	}
 
+	public void setProperties(Properties properties) {
+		this.properties = properties;
+	}
+	
+	
+
 }

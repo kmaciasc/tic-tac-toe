@@ -13,7 +13,6 @@ public class TicTacToeView {
 		input = new Scanner(System.in);
 	}
 
-
 	public void displayMessage(String mssg) {
 		System.out.println(mssg);
 	}
@@ -44,8 +43,4 @@ public class TicTacToeView {
 	      }
 
 	}
-
-
-
-
 }

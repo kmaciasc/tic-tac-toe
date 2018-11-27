@@ -29,20 +29,6 @@ public class Util {
 				isNumber(splitInput[1]));
 	}
 
-	public static boolean isMovementInRange (String input, int rows, int cols) {
-		int row;
-		int column;
-		boolean result = false;
-		if (isValidInput(input)) {
-			row = getRowValue(input);
-			column = getColumnValue(input);
-			if ((row > 0 && row <= rows) && (column > 0 && column <= cols)) {
-				result = true;
-			}
-		}
-		return result;
-	}
-
 	private static Integer convertStringToInteger (String number) {
 		return Integer.parseInt(number);
 	}
